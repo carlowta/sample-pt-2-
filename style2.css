@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(pic2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #DEE1DD;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.4s ease;
+}
+
+ul li a:hover {
+    background-color: #DEE1DD;
+    color: #12073f;
+}
+
+ul li.active a {
+    background-color: #DEE1DD;
+    color: #12073f;
+}
+
+.logo img {
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1 {
+    color: #DEE1DD;
+    font-size: 75px;
+    letter-spacing: -3px;
+}
+
+.button {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    border: 1px solid #DEE1DD;
+    padding: 5px 20px;
+    color: #DEE1DD;
+    transition: 0.4s ease;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #DEE1DD;
+    color: #12073f;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute; 
+    top: 120%; 
+    left: 0;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0;
+    list-style: none;
+    z-index: 1000;
+}
+
+.sub-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sub-menu li {
+    padding: 5px 15px;
+    text-align: left;
+    transition: 0.4s ease;
+}
+
+.sub-menu li a {
+    color: #DEE1DD;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+}
+
+.sub-menu li:hover {
+    color: #12073f;
+}
+
+.main ul li:hover .sub-menu {
+    display: block;
+}
